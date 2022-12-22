@@ -24,7 +24,8 @@ const Main = () => {
                 src={user?.photoURL}
                 alt=""
                 className="w-12 h-12 rounded-full bg-gray-500"
-              />
+              /> 
+              {/*phoot url */}
               <div>
                 <h2 className=" font-semibold">
                   {user?.displayName ? user?.displayName : "Name Not Found"}
