@@ -22,7 +22,7 @@ export const routes = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: () =>
-          fetch("http://localhost:5000/services"),
+          fetch("https://photographer-server-dun.vercel.app/services"),
       },
 
       {
@@ -41,7 +41,7 @@ export const routes = createBrowserRouter([
         path: "/services",
         element: <Services></Services>,
         loader: () =>
-          fetch("http://localhost:5000/services"),
+          fetch("https://photographer-server-dun.vercel.app/services"),
       },
 
       {
@@ -49,7 +49,7 @@ export const routes = createBrowserRouter([
         element: <ServiceDetails></ServiceDetails>,
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/services/${params.id}`
+            `https://photographer-server-dun.vercel.app/services/${params.id}`
           ),
       },
 
@@ -66,7 +66,7 @@ export const routes = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () =>
-          fetch("http://localhost:5000/reviews"),
+          fetch("https://photographer-server-dun.vercel.app/reviews"),
       },
 
       {

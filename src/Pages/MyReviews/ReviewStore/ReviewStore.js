@@ -4,7 +4,7 @@ import FilterReview from "../FilterReview/FilterReview";
 const ReviewStore = ({ _id }) => {
   const [reviews, setReviews] = useState();
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://photographer-server-dun.vercel.app/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);

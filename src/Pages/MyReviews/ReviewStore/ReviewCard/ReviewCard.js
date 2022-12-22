@@ -7,7 +7,7 @@ const ReviewCard = ({ r, handleDelete }) => {
   const { _id, email, message, rating, serviceName, userImage, customer } = r;
 
   const updateReview = (data) => {
-    fetch(`http://localhost:5000/reviews/${r?._id}`, {
+    fetch(`https://photographer-server-dun.vercel.app/reviews/${r?._id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

@@ -9,7 +9,7 @@ const MyReviwes = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure delete this review");
     if (proceed) {
-      fetch(`http://localhost:5000/reviews/${id}`, {
+      fetch(`https://photographer-server-dun.vercel.app/reviews/${id}`, {
         method: "DELETE",
         headers: {
           authorization: `Bearer ${localStorage.getItem("genius-token")}`,

@@ -22,7 +22,7 @@ const AddServices = () => {
     };
     console.log(img, rating);
 
-    fetch("http://localhost:5000/services", {
+    fetch("https://photographer-server-dun.vercel.app/services", {
       method: "POST",
       headers: {
         "content-type": "application/json",
