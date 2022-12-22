@@ -44,6 +44,7 @@ export const routes = createBrowserRouter([
           fetch("https://photographer-server-dun.vercel.app/services"),
       },
 
+      
       {
         path: "/services/:id",
         element: <ServiceDetails></ServiceDetails>,

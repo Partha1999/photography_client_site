@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 
-Live Link - [Create React App](https://wedding-photoservices.netlify.app).
+Live Link - [Create React App](https://dapper-smakager-7ece70.netlify.app/services).
 
-## I havae use this project
+## I have use this project
 
 - Firebase
 - Tailwind
